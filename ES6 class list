@@ -1,0 +1,30 @@
+// https://app.ultimatecourses.com/course/angular-fundamentals/classes-spread-operator-arrow-functions-immutability
+
+class ShoppingList {
+
+    someArra: string[];
+
+    constructor() {
+        this.someArra = [];
+    }
+
+    addItem(item: string) {
+        this.someArra = [...this.someArra, item]; 
+    }
+
+    removeItem(item: string) {
+        // (arr) is an arrow function
+        this.someArra = this.someArra.filter((arr) => item !== arr);
+    }
+}
+
+const list = new ShoppingList();
+
+list.addItem('banana');
+list.addItem('melon');
+
+console.log(list.someArra);
+
+list.removeItem('melon');
+
+console.log(list.someArra);
