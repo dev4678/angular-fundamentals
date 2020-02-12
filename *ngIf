@@ -1,0 +1,9 @@
+name = '';
+
+<div *ngIf="name.length">
+  <p>show something</p>
+</div>
+
+<template [ngIf]="name.length>
+  <p>show something</p>
+</template>
