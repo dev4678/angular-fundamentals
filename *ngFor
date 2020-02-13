@@ -1,0 +1,32 @@
+interface Passengers {
+
+id: number,
+name: string,
+isChecked: boolean
+
+}
+
+
+export class Test {
+
+const passengers: Passengers[] = [
+ {
+  id:1,
+  name: 'test',
+  isChecked: true
+  },
+   {
+  id:2,
+  name: 'test 2',
+  isChecked: true
+  },
+ ]
+}
+
+//html
+
+<ul>
+  <li *ngFor="passenger of passengers; i = index">
+    {{i}} : {{passenger.name}}
+   </li>
+</ul>
