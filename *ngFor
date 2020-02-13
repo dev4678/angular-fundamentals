@@ -9,7 +9,7 @@ isChecked: boolean
 
 export class Test {
 
-const passengers: Passengers[] = [
+passengers: Passengers[] = [
  {
   id:1,
   name: 'test',
