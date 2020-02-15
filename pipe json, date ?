@@ -1,0 +1,4 @@
+{{ passenger | json }}
+{{ timestamp | date: 'yMMd' | uppsercase }}
+
+{{ passerenger.checked ? 'Is Checked' : 'is not checked' }}
