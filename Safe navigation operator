@@ -1,0 +1,16 @@
+interface Child {
+
+name: string;
+age: number;
+
+}
+
+interface Passenger {
+
+name: string
+children: Child [] | null
+
+}
+
+// safe operator checks if childen is null if yes, throws no error
+{{ passenger.children?.length || 0 }}
