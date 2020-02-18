@@ -3,3 +3,9 @@
   [selected]="item.key === detail?.baggage" [value]="item.key">
   </option
  </select>
+ 
+ <select>
+  <option *ngFor="let item of baggage" [ngValue="item,key">
+  </option
+ </select>
+
