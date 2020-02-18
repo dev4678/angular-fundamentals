@@ -5,7 +5,7 @@
  </select>
  
  <select>
-  <option *ngFor="let item of baggage" [ngValue]="item,key">
+  <option *ngFor="let item of baggage" [ngValue]="item.key">
   </option
  </select>
 
